@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Lectuer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngIf="course.fields">
+        <ion-card-header *ngIf="course.fields.title">
+            {{ course.fields.title }}
+        </ion-card-header>
+        <ion-card-content  >
+          <div [innerHTML]="course.fields.description | mdToHtml"></div>
+        </ion-card-content>
+      </ion-card>
+
+        <br><figure>
+            <figcaption>code html</figcaption>
+            <pre><code contenteditable spellcheck="false">
+              &lt;h1&gt;hello&lt;/h1&gt;
+            </code></pre>
+          </figure>
+
+
+          <blockquote>
+              <pre>
+                <code contenteditable spellcheck="false">
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;int x;
+
+</code>
+              </pre>
+            </blockquote>
+
+</ion-content>

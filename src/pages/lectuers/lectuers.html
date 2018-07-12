@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Lectuers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+    <ion-list *ngFor="let course of courses">
+        <ion-item (click)="goToCourseDetailsPage(course.sys.id)">
+            <ion-icon name="download"></ion-icon>
+            {{ course.fields.title }}
+              <ion-icon class="pdRight" name="ios-arrow-forward" ></ion-icon>
+        </ion-item>
+      </ion-list>
+
+</ion-content>
